@@ -1,0 +1,26 @@
+[package]
+name = "parallel_computing_lab3"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.5"
+crossbeam = "0.8.1"
+itertools = "0.10.3"
+rayon = "1.5"
+
+[dev-dependencies]
+criterion = "0.3"
+
+[build-dependencies]
+bindgen = "0.53.1"
+
+[[bench]]
+name = "lab_bench"
+harness = false
+#opt-level = 0
+
+#[profile.bench]
+#opt-level = 0
